@@ -63,8 +63,10 @@
 
 			}
 		}else{
+		alert("S");
 			var me=ajaxxml();
 			me.success(function(xml){
+		alert("S");
 				xmlsave=xml;
 				showpage(mpage,mval);
 			});
@@ -167,23 +169,53 @@
 		if(sublist.length>0){
 			for(var b=0;b<sublist.length;b++){
 				out+="			<font color='#d5c13f' ><p>"+sublist.eq(b).children("name").text()+"</p></font>";
-				out+="			<div class='line'></div>";			
-				var classlist=sublist.eq(b).children("class");
-				for(var a=0;a<classlist.length;a++){
-					out+="		<div  class='classclick' data-val='"+classlist.eq(a).children("code").text()+"' data-folder='"+classlist.eq(a).parents("classtype").children("name").text()+"'>";
-					out+="			<font color='#ffffff' ><p>"+classlist.eq(a).children("name").text()+"</p></font>";
-					out+="			<div class='line'></div>";
-					out+="		</div>";
-				}
+				out+="			<div class='line'></div>";	
+				var subjectlist=sublist.eq(b).children("subjects");
+				//if(subjectlist.length>0){
+					for(var s=0;s<subjectlist.length;s++){
+						out+="			<font color='#f3f355' ><p>"+subjectlist.eq(s).children("name").text()+"</p></font>";
+						out+="			<div class='line'></div>";	
+						var classlist=subjectlist.eq(s).children("class");
+						for(var a=0;a<classlist.length;a++){
+							out+="		<div  class='classclick' data-val='"+classlist.eq(a).children("code").text()+"' data-folder='"+classlist.eq(a).parents("classtype").children("name").text()+"'>";
+							out+="			<font color='#ffffff' ><p style='padding-left:30px;'>"+classlist.eq(a).children("name").text()+"</p></font>";
+							out+="			<div class='line'></div>";
+							out+="		</div>";
+						}
+					}
+			//	}else{
+			//		var classlist=sublist.eq(b).children("class");
+			//		for(var a=0;a<classlist.length;a++){
+			//			out+="		<div  class='classclick' data-val='"+classlist.eq(a).children("code").text()+"' data-folder='"+classlist.eq(a).parents("classtype").children("name").text()+"'>";
+			//			out+="			<font color='#ffffff' ><p style='padding-left:30px;'>"+classlist.eq(a).children("name").text()+"</p></font>";
+			//			out+="			<div class='line'></div>";
+			//			out+="		</div>";
+			//		}
+				//}
 			}
 		}else{
-			var classlist=$(xmlsave).find('cyear[id='+z+']').children("class");
-			for(var a=0;a<classlist.length;a++){
-				out+="		<div  class='classclick' data-val='"+classlist.eq(a).children("code").text()+"'  data-folder='"+classlist.eq(a).parents("classtype").children("name").text()+"'>";
-          		out+="			<font color='#ffffff' ><p>"+classlist.eq(a).children("name").text()+"</p></font>";
-				out+="			<div class='line'></div>";
-				out+="		</div>";
-			}
+			var subjectlist=$(xmlsave).find('cyear[id='+z+']').children("subjects");
+			//if(subjectlist.length>0){
+				for(var s=0;s<subjectlist.length;s++){
+					out+="			<font color='#f3f355' ><p>"+subjectlist.eq(s).children("name").text()+"</p></font>";
+					out+="			<div class='line'></div>";	
+					var classlist=subjectlist.eq(s).children("class");
+					for(var a=0;a<classlist.length;a++){
+						out+="		<div   class='classclick' data-val='"+classlist.eq(a).children("code").text()+"' data-folder='"+classlist.eq(a).parents("classtype").children("name").text()+"'>";
+						out+="			<font color='#ffffff'><p style='padding-left:30px;'>"+classlist.eq(a).children("name").text()+"</p></font>";
+						out+="			<div class='line'></div>";
+						out+="		</div>";
+					}
+				}
+		//	}else{
+			//	var classlist=$(xmlsave).find('cyear[id='+z+']').children("class");
+			//	for(var a=0;a<classlist.length;a++){
+			//		out+="		<div  class='classclick' data-val='"+classlist.eq(a).children("code").text()+"' data-folder='"+classlist.eq(a).parents("classtype").children("name").text()+"'>";
+			//		out+="			<font color='#ffffff' ><p style='padding-left:30px;'>"+classlist.eq(a).children("name").text()+"</p></font>";
+			//		out+="			<div class='line'></div>";
+			//		out+="		</div>";
+			//	}
+		//	}
 		}
 		out+="</div>";
 		return out;
