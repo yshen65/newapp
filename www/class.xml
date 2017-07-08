@@ -635,7 +635,7 @@
 	</cyear>
     </classtype>
     <classtype  id='E'>
-        <name>英文科</name>
+        <name>英語科</name>
 		<cimg>img/en_book.png</cimg>
         <adurl>https://www.sites.google.com/site/maorongexam/</adurl>
 		<cyear id='E10'>
@@ -2778,8 +2778,7 @@
 					<class>
 						<name>民主政治</name>
 						<code>A23-4</code>
-					</class
-					><class>
+					</class><class>
 						<name>國家</name>
 						<code>A23-5</code>
 					</class>    
