@@ -158,15 +158,15 @@
 					<name>頂真</name>
 					<code>C04-7</code>
 				</class>
-                                <class>
+                <class>
 					<name>互文</name>
 					<code>C04-8</code>
 				</class>
-                                <class>
+                <class>
 					<name>關鍵戰鬥</name>
 					<code>C04-9</code>
 				</class>
-                                <class>
+                <class>
 					<name>贏家訣竅</name>
 					<code>C04-10</code>
 				</class>
@@ -220,13 +220,9 @@
 					<code>C06-3</code>
 				</class>
 				<class>
-					<name>銘文類</name>
+					<name>駢文、散文、小品文</name>
 					<code>C06-4</code>
 				</class>
-				<class>
-					<name>駢文、散文、小品文</name>
-					<code>C06-5</code>
-				</class>				                 
 			</subjects>
 		</cyear>
 		<cyear id='C20'>
@@ -699,11 +695,11 @@
                 <class>
 					<name>榜首延伸：other用於比較級</name>
 					<code>E02-7</code>
-				</class>		
+				</class>
                 <class>
 					<name>資優挑戰</name>
 					<code>E02-8</code>
-				</class>						
+				</class>		
 			</subjects>
             <subjects>
 				<name>時態(Pron.)</name>
@@ -735,7 +731,7 @@
                 <class>
 					<name>現在簡單式代替未來式</name>
 					<code>E03-7</code>
-				</class>		
+				</class>
                 <class>
 					<name>現在進行式、過去進行式、未來進行式</name>
 					<code>E03-8</code>
@@ -743,11 +739,11 @@
                 <class>
 					<name>關鍵戰鬥</name>
 					<code>E03-9</code>
-				</class>			
+				</class>
                 <class>
 					<name>資優挑戰</name>
 					<code>E03-10</code>
-				</class>									
+				</class>
 			</subjects>
             <subjects>
 				<name>時態Ⅱ</name>
@@ -779,11 +775,11 @@
                 <class>
 					<name>關鍵戰鬥</name>
 					<code>E04-7</code>
-				</class>		
+				</class>
                 <class>
 					<name>資優挑戰</name>
 					<code>E04-8</code>
-				</class>						
+				</class>		
 			</subjects>
             <subjects>
 				<name>被動語態</name>
@@ -815,15 +811,15 @@
                 <class>
 					<name>授予動詞、祈使句的的被動</name>
 					<code>E05-7</code>
-				</class>		
+				</class>
                 <class>
 					<name>關鍵戰鬥</name>
 					<code>E05-8</code>
-				</class>	
+				</class>
                 <class>
 					<name>資優挑戰</name>
 					<code>E05-9</code>
-				</class>							
+				</class>			
 			</subjects>
             <subjects>
 				<name>動詞(V.)</name>
@@ -1030,7 +1026,7 @@
 				<code>E13</code>
 				<class>
 					<name>超級關鍵字</name>
-					<code>E12-1</code>
+					<code>E13-1</code>
 				</class>
 				<class>
 					<name>單字大聲唱、例句停看聽、句型重點</name>
@@ -1330,7 +1326,7 @@
 				<code>E13</code>
 				<class>
 					<name>超級關鍵字</name>
-					<code>E12-1</code>
+					<code>E13-1</code>
 				</class>
 				<class>
 					<name>單字大聲唱、例句停看聽、句型重點</name>
@@ -2071,7 +2067,7 @@
 				</class>
 				<class>
 					<name>奪分試題</name>
-					<code>M021-7</code>
+					<code>M02-7</code>
 				</class>
                 <class>
 					<name>最大公因數求法</name>
@@ -2552,7 +2548,7 @@
 						<name>早期台灣</name>
 						<code>A05-2</code>
 					</class>
-									<class>
+					<class>
 						<name>國際競爭時期</name>
 						<code>A05-3</code>
 					</class>
@@ -2561,9 +2557,13 @@
 						<code>A05-4</code>
 					</class>
 					<class>
-						<name>關鍵戰鬥</name>
+						<name>清領前期</name>
 						<code>A05-5</code>
-					</class>                                                    
+					</class>
+					<class>
+						<name>關鍵戰鬥</name>
+						<code>A05-6</code>
+					</class>
 				</subjects>
 			</subtype>
 			<subtype>
