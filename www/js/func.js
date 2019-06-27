@@ -92,8 +92,11 @@
 	});
 	//顯示影片
 	$("body").delegate(".classclick","click",function(){
+		alert("CLICK")
 		var murl="file://"+fileURL+$(this).data("folder")+"/"+$(this).data("val")+".mp4";
+		alert("pass")
 		try{
+			alert(murl)
 			 fileOpener.open(murl);
 		 } catch(err) {
 			 alert("ER - " + err.message);
