@@ -49,6 +49,7 @@
 			function onDeviceReady() {
 				alert("test-DeviceReady");
 				cordova.plugins.diagnostic.getExternalSdCardDetails(function(details){
+					alert("test-diagnostic");
 					details.forEach(function(detail){
 						if(detail.canWrite && detail.freeSpace > 100000){
 								alert("test-passdev");
@@ -65,7 +66,7 @@
 								});
 							}
 					});
-				}, function(error){});
+				}, function(alert("test-diagnosticerr");){});
 
 			}
 		}else{
