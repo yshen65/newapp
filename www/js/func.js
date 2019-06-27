@@ -1,7 +1,8 @@
 ﻿$(document).ready(function(){
+	alert("test-start");
 	//設定元件
 	var $window = $(window);
-	var windowHeight = 0; 
+	var windowHeight = 0;
 	var windowwidth = 0;
 	var mpage=0;
 	var mval="";
@@ -30,7 +31,7 @@
 			mval=state.v;
 			showpage(mpage,mval);
 		}
-	});	
+	});
 	var url=window.location.toString();
 	page=url.substring(url.lastIndexOf('/') + 1).split("?")[0];
 	$.when(
@@ -40,6 +41,7 @@
 			$( deferred.resolve );
 		})
 	).done(function(){
+			alert("test-enter");
 		setsize();
 		if(isapp){
 			document.addEventListener("deviceready", onDeviceReady, false);
@@ -47,12 +49,14 @@
 				cordova.plugins.diagnostic.getExternalSdCardDetails(function(details){
 					details.forEach(function(detail){
 						if(detail.canWrite && detail.freeSpace > 100000){
+								alert("test-passdev");
 								temp = detail.filePath;
 								ta=temp.split("storage/");
 								tb=ta[1].split("/");
 								fileURL="/storage/"+tb[0]+"/";//SD根目錄
 								var me=ajaxxml();
 								me.success(function(xml){
+										alert("test-passfile");
 									xmlsave=xml;
 									//進入
 									showpage(mpage,mval);
@@ -75,7 +79,7 @@
 	$window.resize(function(){
 		$window = $(window);
 		setsize();
-	});	
+	});
 	$(window).scroll(function (event) {
 	});
 	//互動
@@ -111,8 +115,11 @@
 			clearInterval(rcloud);
 		}
 		//首頁--在index.html
+			alert("test-passindex");
 		if(mypage==0){
+							alert("test-isindex");
 			var temp=print_index();
+							alert("test-page");
 			$("#outerwrap").html(temp);
 			$("#indeximg1").css("opacity",0).css("margin-top",-400);
 			$("#indeximg2").css("opacity",0).css("margin-left",-400);
@@ -122,37 +129,38 @@
 			$("#indeximg1").delay(500).animate({"opacity":1,"margin-top":0},800);
 			$("#indeximg2").delay(1000).animate({"opacity":1,"margin-left":0},800);
 			$("#indeximg3").delay(1000).animate({"opacity":1,"margin-right":0},800);
+
 			rmycloud();
 			setTimeout(function(){
 				$("#indexclick").addClass("pageclick");
 				$("#indexclick").data("page",1);
-				
+
 			},1000);
 		}
 		//課程選擇
 		else if(x==1){
 			var temp=print_menu();
-			$("#outerwrap").html(temp);	
+			$("#outerwrap").html(temp);
 			if(tb=getxmlmenu()){
-				$(".page1insert").html(tb);	
+				$(".page1insert").html(tb);
 				$("#outerwrap").animate({"opacity":1},300);
 			}
 		}
 		//書架
 		else if(x==2){
 			var temp=print_bookselve();
-			$("#outerwrap").html(temp);	
+			$("#outerwrap").html(temp);
 			if(tb=getxmlselve(myval)){
-				$(".centerwarp2").html(tb);	
+				$(".centerwarp2").html(tb);
 				$("#outerwrap").animate({"opacity":1},300);
 			}
 		}
 		//課程列表
 		else if(x==3){
 			var temp=print_booklist();
-			$("#outerwrap").html(temp);	
+			$("#outerwrap").html(temp);
 			if(tb=getxmllist(myval)){
-				$(".classcbox").html(tb);	
+				$(".classcbox").html(tb);
 				$("#outerwrap").animate({"opacity":1},300);
 			}
 		}
@@ -167,12 +175,12 @@
 		if(sublist.length>0){
 			for(var b=0;b<sublist.length;b++){
 				out+="			<font color='#d5c13f' ><p>"+sublist.eq(b).children("name").text()+"</p></font>";
-				out+="			<div class='line'></div>";	
+				out+="			<div class='line'></div>";
 				var subjectlist=sublist.eq(b).children("subjects");
 				if(subjectlist.length>0){
 					for(var s=0;s<subjectlist.length;s++){
 						out+="			<font color='#f3f355' ><p>"+subjectlist.eq(s).children("name").text()+"</p></font>";
-						out+="			<div class='line'></div>";	
+						out+="			<div class='line'></div>";
 						var classlist=subjectlist.eq(s).children("class");
 						for(var a=0;a<classlist.length;a++){
 							out+="		<div  class='classclick' data-val='"+classlist.eq(a).children("code").text()+"' data-folder='"+classlist.eq(a).parents("classtype").children("name").text()+"'>";
@@ -196,7 +204,7 @@
 			if(subjectlist.length>0){
 				for(var s=0;s<subjectlist.length;s++){
 					out+="			<font color='#f3f355' ><p>"+subjectlist.eq(s).children("name").text()+"</p></font>";
-					out+="			<div class='line'></div>";	
+					out+="			<div class='line'></div>";
 					var classlist=subjectlist.eq(s).children("class");
 					for(var a=0;a<classlist.length;a++){
 						out+="		<div   class='classclick' data-val='"+classlist.eq(a).children("code").text()+"' data-folder='"+classlist.eq(a).parents("classtype").children("name").text()+"'>";
