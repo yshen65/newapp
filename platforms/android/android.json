@@ -114,6 +114,10 @@
         },
         "cordova-plugin-fileopener": {
             "PACKAGE_NAME": "com.maorongexam.app"
+        },
+        "cordova-android-support-gradle-release": {
+            "ANDROID_SUPPORT_VERSION": "27.+",
+            "PACKAGE_NAME": "com.maorongexam.app"
         }
     },
     "dependent_plugins": {},
@@ -373,6 +377,7 @@
         "com.wmjalak.cordova.fileopener": "1.0.0",
         "cordova.plugins.diagnostic": "3.5.0",
         "cordova-plugin-android-permissions": "0.11.0",
-        "cordova-plugin-fileopener": "1.0.5"
+        "cordova-plugin-fileopener": "1.0.5",
+        "cordova-android-support-gradle-release": "3.0.1"
     }
 }

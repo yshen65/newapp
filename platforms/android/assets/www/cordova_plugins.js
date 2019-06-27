@@ -257,7 +257,8 @@ module.exports.metadata =
     "com.wmjalak.cordova.fileopener": "1.0.0",
     "cordova.plugins.diagnostic": "3.5.0",
     "cordova-plugin-android-permissions": "0.11.0",
-    "cordova-plugin-fileopener": "1.0.5"
+    "cordova-plugin-fileopener": "1.0.5",
+    "cordova-android-support-gradle-release": "3.0.1"
 };
 // BOTTOM OF METADATA
 });
