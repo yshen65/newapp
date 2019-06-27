@@ -66,7 +66,7 @@
 								});
 							}
 					});
-				}, function(alert("test-diagnosticerr");){});
+				}, function(){alert("test-diagnosticerr");});
 
 			}
 		}else{
