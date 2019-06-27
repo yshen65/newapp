@@ -44,26 +44,22 @@
 		if(isapp){
 			document.addEventListener("deviceready", onDeviceReady, false);
 			function onDeviceReady() {
-				alert("test-DeviceReady");
 				cordova.plugins.diagnostic.getExternalSdCardDetails(function(details){
-					alert("test-diagnostic");
 					details.forEach(function(detail){
 						if(detail.canWrite && detail.freeSpace > 100000){
-								alert("test-passdev");
 								temp = detail.filePath;
 								ta=temp.split("storage/");
 								tb=ta[1].split("/");
 								fileURL="/storage/"+tb[0]+"/";//SD根目錄
 								var me=ajaxxml();
 								me.success(function(xml){
-										alert("test-passfile");
 									xmlsave=xml;
 									//進入
 									showpage(mpage,mval);
 								});
 							}
 					});
-				}, function(){alert("test-diagnosticerr");});
+				}, function(){});
 
 			}
 		}else{
@@ -115,11 +111,8 @@
 			clearInterval(rcloud);
 		}
 		//首頁--在index.html
-			alert("test-passindex");
 		if(mypage==0){
-							alert("test-isindex");
 			var temp=print_index();
-							alert("test-page");
 			$("#outerwrap").html(temp);
 			$("#indeximg1").css("opacity",0).css("margin-top",-400);
 			$("#indeximg2").css("opacity",0).css("margin-left",-400);
