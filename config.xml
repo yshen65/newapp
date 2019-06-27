@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.maorongexam.app" version="1.4.8" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.maorongexam.app" version="1.4.9" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
   <name>雲端學院</name>
   <description>
       我們的使命-讓您放心去玩
@@ -8,7 +8,7 @@
       榜首贏家-國中雲端學院
   </author>
     <content src="index.html" />
-    <preference name="phonegap-version" value="cli-7.1.0" />
+    <preference name="phonegap-version" value="cli-8.1.1" />
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
     <preference name="orientation" value="landscape" />
