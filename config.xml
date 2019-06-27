@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.maorongexam.app" version="1.4.9" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.maorongexam.app" version="1.4.10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
   <name>雲端學院</name>
   <description>
       我們的使命-讓您放心去玩
@@ -13,7 +13,7 @@
     <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
     <preference name="orientation" value="landscape" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="17" />
+    <preference name="android-minSdkVersion" value="19" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
