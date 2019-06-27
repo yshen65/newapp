@@ -44,8 +44,10 @@
 			alert("test-enter");
 		setsize();
 		if(isapp){
+			alert("test-isapp);
 			document.addEventListener("deviceready", onDeviceReady, false);
 			function onDeviceReady() {
+				alert("test-DeviceReady");
 				cordova.plugins.diagnostic.getExternalSdCardDetails(function(details){
 					details.forEach(function(detail){
 						if(detail.canWrite && detail.freeSpace > 100000){
