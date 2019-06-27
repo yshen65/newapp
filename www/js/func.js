@@ -44,7 +44,7 @@
 			alert("test-enter");
 		setsize();
 		if(isapp){
-			alert("test-isapp);
+			alert("test-isapp");
 			document.addEventListener("deviceready", onDeviceReady, false);
 			function onDeviceReady() {
 				alert("test-DeviceReady");
