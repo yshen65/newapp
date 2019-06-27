@@ -45,10 +45,10 @@
 			document.addEventListener("deviceready", onDeviceReady, false);
 			function onDeviceReady() {
 				alert("test-DeviceReady");
-		//		cordova.plugins.diagnostic.getExternalSdCardDetails(function(details){
+				cordova.plugins.diagnostic.getExternalSdCardDetails(function(details){
 					alert("test-diagnostic");
-			//		details.forEach(function(detail){
-				//		if(detail.canWrite && detail.freeSpace > 100000){
+					details.forEach(function(detail){
+						if(detail.canWrite && detail.freeSpace > 100000){
 								alert("test-passdev");
 								temp = detail.filePath;
 								ta=temp.split("storage/");
@@ -61,9 +61,9 @@
 									//進入
 									showpage(mpage,mval);
 								});
-				//			}
-			//		});
-			//	}, function(){alert("test-diagnosticerr");});
+							}
+					});
+				}, function(){alert("test-diagnosticerr");});
 
 			}
 		}else{
