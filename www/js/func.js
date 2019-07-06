@@ -94,6 +94,14 @@
 	$("body").delegate(".classclick","click",function(){
 		var murl="file://"+fileURL+$(this).data("folder")+"/"+$(this).data("val")+".mp4";
 		try{
+			window.cordova.plugins.FileOpener.openFile(
+				murl,
+				function(){},
+				function(e){
+					alert('message: ' + e.message);
+				}
+			);
+			/*
 //				cordova.plugins.fileOpener2.open(murl);
 				cordova.plugins.fileOpener2.open(
 				    murl, // You can also use a Cordova-style file uri: cdvfile://localhost/persistent/Downloads/starwars.pdf
@@ -107,6 +115,7 @@
 				        }
 				    }
 				);
+				*/
 		 } catch(err) {
 			 alert("ER - " + err.message);
 		 }
