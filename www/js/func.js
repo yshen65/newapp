@@ -94,9 +94,9 @@
 	$("body").delegate(".classclick","click",function(){
 		var murl="file://"+fileURL+$(this).data("folder")+"/"+$(this).data("val")+".mp4";
 		try{
-
+				fileOpener.open(murl);
 		//	cordova.plugins.FileOpener.openFile(murl,function(){alert("G")},function(){alert("K")});
-			 cordova.plugins.fileOpener2.open(murl);
+		//	 cordova.plugins.fileOpener2.open(murl);
 		 } catch(err) {
 			 alert("ER - " + err.message);
 		 }
