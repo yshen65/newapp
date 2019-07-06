@@ -92,12 +92,14 @@
 	});
 	//顯示影片
 	$("body").delegate(".classclick","click",function(){
-		var murl="file://"+fileURL+$(this).data("folder")+"/"+$(this).data("val")+".mp4";
+		var me=$(this);
+		//var murl="file://"+fileURL+$(this).data("folder")+"/"+$(this).data("val")+".mp4";
 		try{
 			window.cordova.plugins.FileOpener.openFile(
-				murl,
+				"file://"+fileURL+me.data("folder")+"/"+me.data("val")+".mp4",
 				function(){},
 				function(e){
+					alert("file://"+fileURL+me.data("folder")+"/"+me.data("val")+".mp4")
 					alert('message: ' + e.message);
 				}
 			);
