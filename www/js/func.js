@@ -93,8 +93,10 @@
 	//顯示影片
 	$("body").delegate(".classclick","click",function(){
 		var me=$(this);
-		//var murl="file://"+fileURL+$(this).data("folder")+"/"+$(this).data("val")+".mp4";
+		var murl="file://"+fileURL+$(this).data("folder")+"/"+$(this).data("val")+".mp4";
 		try{
+			fileOpener.open(murl);
+			/*
 			window.cordova.plugins.FileOpener.openFile(
 				"file://"+fileURL+me.data("folder")+"/"+me.data("val")+".mp4",
 				function(){},
@@ -103,6 +105,7 @@
 					alert('message: ' + e.message);
 				}
 			);
+			*/
 			/*
 //				cordova.plugins.fileOpener2.open(murl);
 				cordova.plugins.fileOpener2.open(
