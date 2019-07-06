@@ -97,6 +97,7 @@
 //				cordova.plugins.fileOpener2.open(murl);
 				cordova.plugins.fileOpener2.open(
 				    murl, // You can also use a Cordova-style file uri: cdvfile://localhost/persistent/Downloads/starwars.pdf
+						'video/mp4',
 				    {
 				        error : function(e) {
 				            alert('Error status: ' + e.status + ' - Error message: ' + e.message);
