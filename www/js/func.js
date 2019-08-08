@@ -51,7 +51,7 @@
 					permissions.RECORD_AUDIO,
 					permissions.MODIFY_AUDIO_SETTINGS
 				];
-				permissions.requestPermission(perlist, persuccess, pererror);
+				permissions.requestPermissions(perlist, persuccess, pererror);
 				function persuccess(status){
 					if ( status.hasPermission ) {
 						cordova.plugins.diagnostic.getExternalSdCardDetails(function(details){
