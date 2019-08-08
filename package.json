@@ -1,0 +1,40 @@
+{
+  "name": "com.maorongexam.app",
+  "version": "1.4.28",
+  "displayName": "雲端學院",
+  "cordova": {
+    "platforms": [
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-file-transfer": {},
+      "cordova-plugin-media": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-file-opener": {},
+      "cordova-plugin-fileopener": {},
+      "cordova.plugins.diagnostic": {
+        "ANDROID_SUPPORT_VERSION": "28.+"
+      },
+      "cordova-plugin-android-permissions": {},
+      "cordova-android-support-gradle-release": {
+        "ANDROID_SUPPORT_VERSION": "27.+"
+      },
+      "com.wmjalak.cordova.fileopener": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android-support-gradle-release": "^3.0.1",
+    "cordova-ios": "~4.1.1",
+    "cordova-plugin-android-permissions": "^1.0.0",
+    "cordova-plugin-device": "^1.1.7",
+    "cordova-plugin-file": "^4.1.1",
+    "cordova-plugin-file-opener": "^1.0.0",
+    "cordova-plugin-file-transfer": "^1.5.1",
+    "cordova-plugin-fileopener": "^1.0.5",
+    "cordova-plugin-media": "^2.2.0",
+    "cordova-plugin-whitelist": "^1.2.2",
+    "cordova.plugins.diagnostic": "^5.0.0"
+  }
+}
