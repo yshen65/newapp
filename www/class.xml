@@ -19,7 +19,7 @@
         <code>C01-2</code>
       </class>
       <class>
-        <name>通用字</name>
+        <name>通同字</name>
         <code>C01-3</code>
       </class>
       <class>
@@ -448,7 +448,7 @@
     <name>三年級上學期</name>
     <cimg>img/bookshelf_book5.png</cimg>
     <subjects>
-      <name>語詞文句判讀</name>
+      <name>語詞文句判讀(一) </name>
       <code>C14</code>
       <class>
         <name>格言佳句</name>
@@ -713,7 +713,7 @@
       </class>
     </subjects>
           <subjects>
-      <name>時態(Pron.)</name>
+      <name>時態(一)</name>
       <code>E03</code>
       <class>
         <name>超級關鍵字</name>
@@ -757,7 +757,7 @@
       </class>
     </subjects>
     <subjects>
-      <name>時態Ⅱ</name>
+      <name>時態(二) </name>
       <code>E04</code>
       <class>
         <name>超級關鍵字</name>
@@ -824,7 +824,7 @@
   <code>E05-6</code>
   </class>
         <class>
-  <name>授予動詞、祈使句的的被動</name>
+  <name>授與動詞、祈使句的被動</name>
   <code>E05-7</code>
   </class>
         <class>
@@ -837,7 +837,7 @@
   </class>
   </subjects>
     <subjects>
-  <name>動詞(V.)</name>
+  <name>動詞(V.)(一)</name>
   <code>E06</code>
   <class>
   <name>課程概要</name>
@@ -881,7 +881,7 @@
   </class>
   </subjects>
     <subjects>
-  <name>動詞(V.)Ⅱ</name>
+  <name>動詞(V.)(二) </name>
   <code>E07</code>
   <class>
   <name>超級關鍵字</name>
@@ -941,7 +941,7 @@
         <code>E08-2</code>
       </class>
       <class>
-        <name>句型72變、孤單V導演、is are傻傻分不清楚</name>
+        <name>句型72變、孤單V導遊、is are傻傻分不清楚</name>
         <code>E08-3</code>
       </class>
       <class>
@@ -1459,7 +1459,7 @@
         <code>M02-6</code>
       </class>
       <class>
-        <name>奪分試題</name>
+        <name>奪分例題</name>
         <code>M02-7</code>
       </class>
               <class>
@@ -1471,7 +1471,7 @@
         <code>M02-9</code>
       </class>
               <class>
-        <name>贏家秘訣</name>
+        <name>贏家訣竅</name>
         <code>M02-10</code>
       </class>
               <class>
@@ -1495,7 +1495,7 @@
         <code>M05-3</code>
       </class>
               <class>
-        <name>贏家秘訣</name>
+        <name>贏家訣竅</name>
         <code>M05-4</code>
       </class>
               <class>
@@ -1698,23 +1698,23 @@
   <name>線對稱圖形</name>
   <code>M18-2</code>
   </class>
-        <class>
+  <class>
   <name>奪分例題</name>
   <code>M18-3</code>
   </class>
   <class>
-  <name>尺規圖形</name>
+  <name>尺規作圖</name>
   <code>M18-4</code>
   </class>
-                        <class>
+  <class>
   <name>奪分例題</name>
   <code>M18-5</code>
   </class>
-        <class>
+  <class>
   <name>立體圖形</name>
   <code>M18-6</code>
   </class>
-        <class>
+  <class>
   <name>奪分例題</name>
   <code>M18-7</code>
   </class>
@@ -1743,7 +1743,7 @@
   <code>M17-5</code>
   </class>
   </subjects>
-          <subjects>
+  <subjects>
       <name>平行與四邊形</name>
       <code>M14</code>
       <class>
@@ -1754,8 +1754,8 @@
         <name>平行與四邊形</name>
         <code>M14-2</code>
       </class>
-              <class>
-        <name>奪分試題</name>
+      <class>
+        <name>奪分例題</name>
         <code>M14-3</code>
       </class>
     </subjects>
@@ -1916,7 +1916,7 @@
           <code>A05-3</code>
         </class>
         <class>
-          <name>鄭式治台時期</name>
+          <name>鄭氏治台時期</name>
           <code>A05-4</code>
         </class>
         <class>
@@ -2159,7 +2159,7 @@
     <subtype>
       <name>歷史</name>
                <subjects>
-        <name>中國史：史前時至南北朝</name>
+        <name>中國史：史前時代至南北朝</name>
         <code>A01</code>
         <class>
           <name>課程概要</name>
@@ -2886,7 +2886,7 @@
           <code>A09-6</code>
         </class>
         <class>
-          <name>義大利的建國、政府發展</name>
+          <name>義大利的建國、政治發展</name>
           <code>A09-7</code>
         </class>
         <class>
@@ -3675,7 +3675,7 @@
                 <code>S18-3</code>
               </class>
               <class>
-                <name>治煉金屬礦</name>
+                <name>冶煉金屬礦</name>
                 <code>S18-4</code>
               </class>
               <class>
@@ -4056,7 +4056,7 @@
           <code>S25-3</code>
         </class>
         <class>
-          <name>電磁效應</name>
+          <name>電磁感應</name>
           <code>S25-4</code>
         </class>
         <class>

@@ -108,6 +108,12 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
+    <platform name="android">
+      <config-file parent="/*" target="AndroidManifest.xml">
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+      </config-file>
+  </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
