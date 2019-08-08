@@ -44,23 +44,39 @@
 		if(isapp){
 			document.addEventListener("deviceready", onDeviceReady, false);
 			function onDeviceReady() {
-				cordova.plugins.diagnostic.getExternalSdCardDetails(function(details){
-					details.forEach(function(detail){
-						if(detail.canWrite && detail.freeSpace > 100000){
-								temp = detail.filePath;
-								ta=temp.split("storage/");
-								tb=ta[1].split("/");
-								fileURL="/storage/"+tb[0]+"/";//SD根目錄
-								var me=ajaxxml();
-								me.success(function(xml){
-									xmlsave=xml;
-									//進入
-									showpage(mpage,mval);
-								});
-							}
-					});
-				}, function(){});
-
+				var permissions = cordova.plugins.permissions;
+				var perlist = [
+				  permissions.WRITE_EXTERNAL_STORAGE,
+				  permissions.READ_PHONE_STATE,
+					permissions.RECORD_AUDIO,
+					permissions.MODIFY_AUDIO_SETTINGS
+				];
+				permissions.requestPermission(perlist, persuccess, pererror);
+				function persuccess(status){
+					if ( status.hasPermission ) {
+						cordova.plugins.diagnostic.getExternalSdCardDetails(function(details){
+							details.forEach(function(detail){
+								if(detail.canWrite && detail.freeSpace > 100000){
+										temp = detail.filePath;
+										ta=temp.split("storage/");
+										tb=ta[1].split("/");
+										fileURL="/storage/"+tb[0]+"/";//SD根目錄
+										var me=ajaxxml();
+										me.success(function(xml){
+											xmlsave=xml;
+											//進入
+											showpage(mpage,mval);
+										});
+									}
+							});
+						}, function(){});
+					}else{
+						alert("請同意使用權利")
+					}
+				}
+				function pererror(){
+					alert("申請使用權力錯誤");
+				}
 			}
 		}else{
 			var me=ajaxxml();
